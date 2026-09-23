@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="aVDewXjHIFwTjt1axPQewT">
+<head data-page-node-id="7wWrWEimOdyerSQxosM9jn">
+<meta charset="utf-8" data-page-node-id="Fj2jaDr9obNQ8A6oWHSj4O">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" data-page-node-id="s4Q3OhJOPnKQbZMqBVsj3j">
+<meta name="theme-color" content="#1a1a2e" id="meta-theme" data-page-node-id="344xzOCKaaX3ytuUXJphD7">
+<meta name="apple-mobile-web-app-capable" content="yes" data-page-node-id="zgykgbBrjUnivuOllgj4oG">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" data-page-node-id="6IE0rRMHNBtyoOBrud9CBn">
+<title>BANGKOK 5D4N · 曼谷旅行手册 · 10.9-10.13</title>
+<style>
+/* ========== THEME VARIABLES ========== */
+:root{
+  --bg:#faf6f0;--surface:#fff;--surface2:#f3ede4;--text:#2a2a2a;--text2:#666;--text3:#999;
+  --accent:#e8654e;--accent2:#4ecdc4;--accent3:#9b59b6;--accent4:#e67e22;--accent5:#3498db;
+  --border:#e0d8cc;--shadow:0 2px 12px rgba(0,0,0,.06);--radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono","Fira Code","Cascadia Code",Consolas,monospace;
+}
+html[data-theme="dark"]{
+  --bg:#15151f;--surface:#1e1e2e;--surface2:#252535;--text:#e8e6e0;--text2:#999;--text3:#666;
+  --accent:#ff7a63;--accent2:#5dd9c8;--accent3:#b370cc;--accent4:#f08533;--accent5:#4db5e8;
+  --border:#33334a;--shadow:0 2px 16px rgba(0,0,0,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;transition:background .4s,color .4s;overflow-x:hidden;padding-bottom:60px}
+a{color:var(--accent);text-decoration:none}
+/* ========== LAYOUT ========== */
+.container{max-width:680px;margin:0 auto;padding:0 16px}
+.section{margin-top:28px}
+.section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);margin-bottom:12px;padding-left:2px;display:flex;align-items:center;gap:6px}
+.section-title::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px}
+/* ========== COUNTDOWN CARD ========== */
+#countdown-card{position:sticky;top:0;z-index:100;background:var(--bg);padding:12px 0 8px;margin-bottom:0}
+.cd-inner{background:linear-gradient(135deg,var(--accent),var(--accent4));border-radius:var(--radius);padding:20px 20px 16px;color:#fff;box-shadow:0 4px 20px rgba(232,101,78,.3)}
+.cd-label{font-size:11px;opacity:.85;text-transform:uppercase;letter-spacing:1px}
+.cd-event{font-size:16px;font-weight:600;margin:4px 0 12px;line-height:1.4}
+.cd-display{display:flex;gap:8px;justify-content:center}
+.cd-unit{text-align:center;min-width:56px}
+.cd-num{font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;font-family:var(--mono);line-height:1}
+.cd-unit-label{font-size:10px;opacity:.7;margin-top:2px;text-transform:uppercase}
+.cd-sep{font-size:28px;font-weight:300;opacity:.4;display:flex;align-items:flex-start;padding-top:2px}
+.cd-tz{font-size:10px;opacity:.6;margin-top:8px;text-align:center}
+/* ========== SVG MAP ========== */
+.map-wrap{background:var(--surface);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow);overflow:hidden}
+.map-svg{width:100%;height:auto;display:block}
+.map-legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px;padding:0 4px}
+.map-legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text2)}
+.map-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+/* ========== BOOKING CARDS ========== */
+.booking-grid{display:grid;gap:10px}
+.booking-card{background:var(--surface);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);border-left:3px solid var(--accent)}
+.booking-card.hotel{border-left-color:var(--accent3)}
+.booking-card.flight{border-left-color:var(--accent5)}
+.booking-card.concert{border-left-color:var(--accent4)}
+.booking-card.dinner{border-left-color:var(--accent2)}
+.bc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.bc-title{font-weight:700;font-size:15px}
+.bc-tag{font-size:10px;background:var(--surface2);padding:2px 8px;border-radius:20px;color:var(--text2);white-space:nowrap}
+.bc-row{font-size:13px;color:var(--text2);display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+.bc-row b{color:var(--text);font-weight:600}
+.bc-link{display:inline-flex;align-items:center;gap:3px;font-size:12px;color:var(--accent);margin-top:6px;border:1px solid var(--border);padding:3px 10px;border-radius:20px}
+/* ========== TIMELINE ========== */
+.day-card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden}
+.day-header{padding:14px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.day-header-left{display:flex;align-items:center;gap:10px}
+.day-badge{width:36px;height:36px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:9px;font-weight:700;line-height:1.1}
+.day-badge .d{font-size:16px}
+.day-info{flex:1}
+.day-date{font-weight:700;font-size:14px}
+.day-theme{font-size:11px;color:var(--text2)}
+.day-arrow{transition:transform .3s;color:var(--text3);font-size:18px}
+.day-card.open .day-arrow{transform:rotate(180deg)}
+.day-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.day-card.open .day-body{max-height:3000px}
+.day-route-btn{margin:10px 16px;background:var(--surface2);border:none;border-radius:8px;padding:8px 14px;font-size:12px;color:var(--accent);cursor:pointer;display:flex;align-items:center;gap:6px;width:calc(100% - 32px);justify-content:center}
+.day-mini-map{margin:0 16px 8px;border-radius:8px;overflow:hidden;display:none}
+.day-card.open .day-mini-map{display:block}
+.timeline{padding:0 16px 12px}
+.tl-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.tl-item:last-child{border-bottom:none}
+.tl-time{flex-shrink:0;width:48px;font-size:13px;font-weight:600;color:var(--accent);font-family:var(--mono);text-align:right;padding-top:1px}
+.tl-body{flex:1}
+.tl-title{font-size:14px;font-weight:600;margin-bottom:2px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tl-desc{font-size:12px;color:var(--text2);line-height:1.5}
+.tl-badge{font-size:9px;padding:1px 6px;border-radius:10px;white-space:nowrap}
+.tl-badge.book{background:#e8f5e9;color:#2e7d32}
+.tl-badge.need{background:#fff3e0;color:#e65100}
+.tl-badge.walkin{background:#e3f2fd;color:#1565c0}
+.tl-badge.option{background:#f3e5f5;color:#7b1fa2}
+html[data-theme="dark"] .tl-badge.book{background:#1b3a1e;color:#66bb6a}
+html[data-theme="dark"] .tl-badge.need{background:#3e2723;color:#ffb74d}
+html[data-theme="dark"] .tl-badge.walkin{background:#0d2538;color:#64b5f6}
+html[data-theme="dark"] .tl-badge.option{background:#2a1a3e;color:#ce93d8}
+.tl-loc-link{font-size:11px;color:var(--accent);margin-top:3px;display:inline-block}
+.tl-outfit{margin:8px 0;padding:8px 10px;background:var(--surface2);border-radius:8px;font-size:12px;color:var(--text2)}
+.tl-outfit b{color:var(--text)}
+.tl-note{margin:8px 0;padding:8px 10px;background:rgba(230,126,34,.08);border-radius:8px;font-size:12px;color:var(--text2);border-left:2px solid var(--accent4)}
+/* ========== TODO LIST ========== */
+.todo-list{list-style:none;counter-reset:todo}
+.todo-item{counter-increment:todo;padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--border);font-size:14px}
+.todo-item:last-child{border-bottom:none}
+.todo-item::before{content:counter(todo);position:absolute;left:0;top:10px;width:20px;height:20px;background:var(--surface2);border-radius:50%;font-size:11px;font-weight:700;color:var(--text2);display:flex;align-items:center;justify-content:center}
+.todo-item.urgent::before{background:var(--accent);color:#fff}
+.todo-item small{display:block;color:var(--text3);font-size:11px;margin-top:2px}
+/* ========== TIPS ========== */
+.tip-grid{display:grid;gap:8px}
+.tip-card{background:var(--surface);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow)}
+.tip-card h4{font-size:13px;font-weight:600;margin-bottom:4px;color:var(--accent)}
+.tip-card p{font-size:12px;color:var(--text2);line-height:1.5}
+/* ========== CHANGELOG ========== */
+.changelog{margin-top:28px;padding:16px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow)}
+.changelog h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);margin-bottom:8px}
+.cl-entry{font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border)}
+.cl-entry:last-child{border-bottom:none}
+.cl-entry b{color:var(--text)}
+.cl-version{font-size:10px;color:var(--text3);text-align:right;margin-top:8px}
+/* ========== MISC ========== */
+.loc-link{color:var(--accent);cursor:pointer;border-bottom:1px dashed var(--accent)}
+.nav-all-btn{display:block;width:100%;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;margin:8px 0 0}
+.fade-in{animation:fadeIn .5s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:380px){.cd-num{font-size:28px}.cd-unit{min-width:46px}}
+</style>
+</head>
+<body data-page-node-id="Gi6cQZvjjAsmYqHdQ3hdiH">
+
+<div class="container" data-page-node-id="qzn9cCMSbAEuiG68nXrIo7">
+
+<!-- ==================== 1. COUNTDOWN CARD ==================== -->
+<div id="countdown-card" data-page-node-id="vwqLpv24Z0mGAQlTsm3mHv">
+  <div class="cd-inner" data-page-node-id="NZArpUszDvtAP5bbx4PyGt">
+    <div class="cd-label" id="cd-label" data-page-node-id="B54yeH1JvyWd9OFXGDrPb7">此刻关注</div>
+    <div class="cd-event" id="cd-event" data-page-node-id="Z6VBUW33j02iWbNJBl8sny">加载中…</div>
+    <div class="cd-display" id="cd-display" data-page-node-id="LbB73QdzWycDpDIdqDeGaG">
+      <div class="cd-unit" data-page-node-id="dLFJQEA3MHMnhMyxbEjBu2"><div class="cd-num" id="cd-d" data-page-node-id="xvSC7RDUvQn2lIzNDEVcgc">00</div><div class="cd-unit-label" data-page-node-id="fvmZFQN2g0BdGIXeN6fsDw">天</div></div>
+      <div class="cd-sep" data-page-node-id="RoodfphC6EzEAGHfcCh5Ch">:</div>
+      <div class="cd-unit" data-page-node-id="U9EfGQoti7ZaSgbxpXMwU3"><div class="cd-num" id="cd-h" data-page-node-id="0bFKFgM1g0ssDM1ODJDFlQ">00</div><div class="cd-unit-label" data-page-node-id="EAtAPikAYH1gvFdTO8zln5">时</div></div>
+      <div class="cd-sep" data-page-node-id="JGgDtTi25YIlE590JBAWop">:</div>
+      <div class="cd-unit" data-page-node-id="OoxEoAL8HWTnzURGKrlHhh"><div class="cd-num" id="cd-m" data-page-node-id="37Iqcfhqj7Zd2dajMp9kmD">00</div><div class="cd-unit-label" data-page-node-id="n9tXqQyFQfJrei0oh2Paep">分</div></div>
+      <div class="cd-sep" data-page-node-id="I7hYN6hiBsMbS4MpYx1Vym">:</div>
+      <div class="cd-unit" data-page-node-id="PgLKytNZPIeP7vKhW8NvBB"><div class="cd-num" id="cd-s" data-page-node-id="Al5wLpcUoZQvCPt0blajfG">00</div><div class="cd-unit-label" data-page-node-id="KWLLrSYxtA63rdjiLuxSbA">秒</div></div>
+    </div>
+    <div class="cd-tz" id="cd-tz" data-page-node-id="DkGb8e2ogyZQfM7UpJbyfi"></div>
+  </div>
+</div>
+
+<!-- ==================== 2. OVERVIEW MAP ==================== -->
+<div class="section" data-page-node-id="NN6Ah3nhTv0viQPDEDasek">
+  <div class="section-title" data-page-node-id="U8FD6PLEowzlKIVTgMvEDs">行程总览地图</div>
+  <div class="map-wrap" data-page-node-id="iGivD6LNMWIEP5itPfi3kB">
+    <svg class="map-svg" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg" data-page-node-id="ulAJnty3MVr9BaC2WkTVqe">
+      <!-- Background -->
+      <rect width="680" height="460" fill="none" data-page-node-id="X1PKb9Rk1pDGHGzrNMkwUv"/>
+      <!-- Chao Phraya River (hand-drawn wavy) -->
+      <path d="M 40 20 Q 60 80 45 140 Q 30 200 55 260 Q 80 320 50 380 Q 35 420 60 460" fill="none" stroke="#74b9ff" stroke-width="14" stroke-linecap="round" opacity="0.5" data-page-node-id="gngaUQOtqIBJpp2AGb7GET"/>
+      <path d="M 40 20 Q 60 80 45 140 Q 30 200 55 260 Q 80 320 50 380 Q 35 420 60 460" fill="none" stroke="#74b9ff" stroke-width="3" stroke-linecap="round" opacity="0.8" data-page-node-id="eyH7fAjsQNGab4UxTcoKAS"/>
+      <text x="15" y="230" font-size="10" fill="#74b9ff" font-weight="600" transform="rotate(-75,15,230)" data-page-node-id="MnkKdPujBlsF55JEfBU7eE">Chao Phraya 湄南河</text>
+
+      <!-- BTS Sukhumvit Line (horizontal) -->
+      <path d="M 100 200 Q 200 195 300 200 Q 400 205 500 200 Q 580 198 640 200" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round" data-page-node-id="RUa1jQsQudaGPcHCNIXF27"/>
+      <!-- BTS Silom Line (diagonal from center to bottom-left) -->
+      <path d="M 300 200 Q 270 250 240 300 Q 210 350 180 400" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round" data-page-node-id="NnTrwwpfxgngTbMQv3rXvD"/>
+      <!-- Airport Rail Link -->
+      <path d="M 420 200 Q 460 230 500 260 Q 540 290 580 310" fill="none" stroke="#aaa" stroke-width="1.5" stroke-dasharray="3 3" data-page-node-id="Zf0MyKAAqGr2wIk7SYsysw"/>
+
+      <!-- Day 1 Route: DMK -> Hotel -> Puponfai/Chula (Coral) -->
+      <path d="M 580 80 Q 500 120 420 160 Q 380 180 350 195" fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" data-page-node-id="sbV8gD0bDu2msXl0ADa1Rq"/>
+      <circle cx="580" cy="80" r="6" fill="#FF6B6B" data-page-node-id="V2CFOCyTodcrXhWHiepKV8"/>
+      <text x="575" y="70" font-size="9" fill="#FF6B6B" font-weight="600" data-page-node-id="NooJifE6CVZ46aaR4hoFgN">DMK</text>
+      <!-- Hotel marker (star) -->
+      <g transform="translate(350,195)" data-page-node-id="aY7K7JXSp5c0tSJPST7rYH">
+        <path d="M 0 -12 L 3.5 -3.5 L 12 -3.5 L 5 3 L 8 12 L 0 7 L -8 12 L -5 3 L -12 -3.5 L -3.5 -3.5 Z" fill="#e8654e" stroke="#fff" stroke-width="1.5" data-page-node-id="tw6OqA3Aa4KkUTBi3s7EHq"/>
+        <text x="16" y="4" font-size="10" fill="var(--text)" font-weight="700" data-page-node-id="mfJLAY49uVRlQcRGu3JQjO">酒店</text>
+        <text x="16" y="16" font-size="8" fill="var(--text2)" data-page-node-id="IUwtD7eLsKHrI2IZxxJPfN">Sindhorn Midtown</text>
+      </g>
+      <!-- Puponfai/Chula -->
+      <circle cx="320" cy="260" r="5" fill="#FF6B6B" data-page-node-id="VTNLcnfw4fFcsBwfSqeYTQ"/>
+      <text x="295" y="278" font-size="8" fill="#FF6B6B" data-page-node-id="a45FnpCWUCy3LOe05iXXve">朱拉夜市</text>
+
+      <!-- Day 2 Route: ACE JOLUN -> Ari -> Song Wat -> Charmkrung -> G.O.D. (Teal) -->
+      <path d="M 350 195 Q 380 180 400 140 Q 420 100 440 90" fill="none" stroke="#4ECDC4" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="Mu516waVPTZyCANPF8pBGi"/>
+      <path d="M 350 195 Q 250 220 150 280 Q 110 310 90 330" fill="none" stroke="#4ECDC4" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="8C0d6dIftSJoCo2yUv4Zlq"/>
+      <circle cx="440" cy="90" r="5" fill="#4ECDC4" data-page-node-id="9UOET47xlKNabpTGNicbKy"/>
+      <text x="425" y="80" font-size="8" fill="#4ECDC4" font-weight="600" data-page-node-id="cEtmzAGtJRGbWpvVawDjNZ">ACE JOLUN</text>
+      <circle cx="460" cy="100" r="3" fill="#4ECDC4" opacity="0.6" data-page-node-id="MaHCG7CAlMYStVqXdDMNPZ"/>
+      <text x="448" y="115" font-size="8" fill="#4ECDC4" data-page-node-id="5EJ5WQhvDgIox0Meb0Da9L">Ari</text>
+      <circle cx="200" cy="310" r="5" fill="#4ECDC4" data-page-node-id="tXaii5WSNmVlSf01h9AvUb"/>
+      <text x="160" y="305" font-size="8" fill="#4ECDC4" data-page-node-id="go3BRD3soOy8RMEu8hq8cJ">Song Wat路</text>
+      <circle cx="110" cy="335" r="5" fill="#4ECDC4" data-page-node-id="0ORxoTFaCp6c27jKswMllk"/>
+      <text x="75" y="350" font-size="8" fill="#4ECDC4" font-weight="600" data-page-node-id="pPdzemWbkZxVeke8DOLqGn">Charmkrung</text>
+      <circle cx="100" cy="350" r="3" fill="#4ECDC4" opacity="0.6" data-page-node-id="aFQE6YrkpAKDKvOIqktvmp"/>
+      <text x="68" y="372" font-size="7" fill="#4ECDC4" data-page-node-id="dH3ITilYOsM4J9QCEDUXMz">G.O.D.</text>
+
+      <!-- Day 3 Route: Patom -> Oasis -> EMSphere -> The Local/Oyster -> Abandoned Mansion (Purple) -->
+      <path d="M 350 195 Q 400 210 440 220 Q 460 225 470 230" fill="none" stroke="#9B59B6" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="gfbkxsx7FTgixomaVoRqns"/>
+      <circle cx="470" cy="230" r="5" fill="#9B59B6" data-page-node-id="k9AbHbTMCbWPsz3Jz7pbCY"/>
+      <text x="440" y="222" font-size="8" fill="#9B59B6" data-page-node-id="Pui6KOF3PiGxQAOvkCQQHv">Patom</text>
+      <circle cx="480" cy="240" r="3" fill="#9B59B6" opacity="0.6" data-page-node-id="NwY6vPtK1C19xzwoMuXXUn"/>
+      <text x="473" y="255" font-size="7" fill="#9B59B6" data-page-node-id="Xmd32iL1RAwQQsBZ7BLRtX">Oasis</text>
+      <circle cx="490" cy="225" r="4" fill="#9B59B6" data-page-node-id="jnwKLrGn6XH1BhhGrWatRG"/>
+      <text x="480" y="215" font-size="8" fill="#9B59B6" data-page-node-id="xU1KTVkaYrS2wMWw5SVsSS">EMSphere</text>
+      <circle cx="470" cy="215" r="4" fill="#9B59B6" data-page-node-id="Myo65z2CCnEDcfDx8OBlcS"/>
+      <text x="448" y="208" font-size="7" fill="#9B59B6" data-page-node-id="xokvfd3WXlowtGyowMENNw">The Local</text>
+      <circle cx="450" cy="200" r="3" fill="#9B59B6" opacity="0.6" data-page-node-id="KHiIhkR2SCVnu5pBxoEYR8"/>
+      <text x="425" y="195" font-size="7" fill="#9B59B6" data-page-node-id="hXsPqXQ0MZCWgGxEmSjBDC">Abandoned</text>
+
+      <!-- Day 4 Route: Siam -> Inter -> Hotel -> Rajamangala (Orange) -->
+      <path d="M 350 195 Q 330 195 310 195" fill="none" stroke="#E67E22" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="5lQc2rULbiGQIng4YADGNR"/>
+      <path d="M 350 195 Q 420 210 480 260 Q 530 300 570 320" fill="none" stroke="#E67E22" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="ogIHPtQ4sQE6pdMCkSQGy3"/>
+      <circle cx="310" cy="195" r="5" fill="#E67E22" data-page-node-id="c4vPKG8X8XGwBhF23B3VEo"/>
+      <text x="290" y="185" font-size="8" fill="#E67E22" font-weight="600" data-page-node-id="z7N1tgrtgR46fwKVqA5UfV">Siam</text>
+      <circle cx="300" cy="200" r="3" fill="#E67E22" opacity="0.6" data-page-node-id="VSNPX9lGe1ZAEisCAmg4Ad"/>
+      <text x="265" y="210" font-size="7" fill="#E67E22" data-page-node-id="GXhhz9sd1wxgW6FAgB4cbH">Inter</text>
+      <circle cx="570" cy="320" r="6" fill="#E67E22" data-page-node-id="Oh3XAEFjtY8p3fAvlXFyjj"/>
+      <text x="540" y="338" font-size="8" fill="#E67E22" font-weight="600" data-page-node-id="DyiAHymZvGgKPZSGm0IIJ7">Rajamangala</text>
+      <text x="535" y="350" font-size="7" fill="#E67E22" data-page-node-id="nkXGplmtHkuupwaZ59lyg9">体育场</text>
+
+      <!-- Day 5 Route: Lumpini -> Central/BigC -> BKK Airport (Blue) -->
+      <path d="M 350 195 Q 320 220 280 240" fill="none" stroke="#3498DB" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="O3EZf9fwHAVZHEQEFOUN8m"/>
+      <path d="M 350 195 Q 450 150 520 100 Q 580 70 630 50" fill="none" stroke="#3498DB" stroke-width="3" stroke-linecap="round" opacity="0.7" data-page-node-id="xdw8rixGyle149rjl3mKQW"/>
+      <circle cx="280" cy="240" r="4" fill="#3498DB" data-page-node-id="qFMtmcDdTnuZLVBmzmOL7W"/>
+      <text x="248" y="233" font-size="8" fill="#3498DB" data-page-node-id="lejuVbYGrhR2f5wkpa1QpP">Lumpini</text>
+      <circle cx="340" cy="175" r="3" fill="#3498DB" opacity="0.6" data-page-node-id="my3uB4Xznp6ryG9tRvCwtB"/>
+      <text x="310" y="165" font-size="7" fill="#3498DB" data-page-node-id="YEVnancEnHNTxrNwZzC8GP">Central/BigC</text>
+      <circle cx="630" cy="50" r="6" fill="#3498DB" data-page-node-id="udbSTyn5Ozx3GUX0uW9Cw0"/>
+      <text x="605" y="40" font-size="9" fill="#3498DB" font-weight="600" data-page-node-id="EW6Pe1CRSyMjhwqIdSuz6r">BKK</text>
+
+      <!-- BTS Station dots -->
+      <circle cx="310" cy="195" r="3" fill="#fff" stroke="#999" stroke-width="1.5" data-page-node-id="GTvWVvpGhbx8Ya92IFYO84"/>
+      <text x="300" y="183" font-size="7" fill="#999" data-page-node-id="UBtVgjm4B8y3mtIK6VtPEr">Siam</text>
+      <circle cx="420" cy="200" r="3" fill="#fff" stroke="#999" stroke-width="1.5" data-page-node-id="8hditaKfQwt2hiiAk5W8FD"/>
+      <text x="410" y="220" font-size="7" fill="#999" data-page-node-id="deFidPKL221NUIrAHt2Blp">Asok</text>
+      <circle cx="460" cy="200" r="3" fill="#fff" stroke="#999" stroke-width="1.5" data-page-node-id="BVqdAkNGkiORGBmfbhGEhC"/>
+      <text x="442" y="220" font-size="7" fill="#999" data-page-node-id="MDrehhmDZYzmHSJQIT7GjS">Phrom Phong</text>
+      <circle cx="440" cy="90" r="3" fill="#fff" stroke="#999" stroke-width="1.5" data-page-node-id="3sWRMFkFDE0EPlKCpxY8WB"/>
+      <text x="422" y="80" font-size="7" fill="#999" data-page-node-id="2MsbYOOTGGHw8HRlwfsb29">Ari/Sanam Pao</text>
+      <circle cx="240" cy="300" r="3" fill="#fff" stroke="#999" stroke-width="1.5" data-page-node-id="XUvdTGs9Uh5FFk6YkDRfsB"/>
+      <text x="215" y="320" font-size="7" fill="#999" data-page-node-id="JCvmbJhDJUxIbFucSATmDh">Saphan Taksin</text>
+    </svg>
+    <div class="map-legend" data-page-node-id="fPysI0ErtrHr59BF0EaHBA">
+      <div class="map-legend-item" data-page-node-id="I6vIqd93EXZxk2bFs8i5Vg"><div class="map-legend-dot" style="background:#FF6B6B" data-page-node-id="6pxaDdnZBMHg3KDlg9eJOT"></div>D1 到达日 10/9</div>
+      <div class="map-legend-item" data-page-node-id="dqIoHRfpAfx2KTTcyL2kNH"><div class="map-legend-dot" style="background:#4ECDC4" data-page-node-id="3z9KfwjDEHnrsaKnPWPSBf"></div>D2 Charmkrung日 10/10</div>
+      <div class="map-legend-item" data-page-node-id="pX2Nx57StYZeyGgn6PNtt4"><div class="map-legend-dot" style="background:#9B59B6" data-page-node-id="w4cCs1yihHdD5Q2cjBI775"></div>D3 下午茶日 10/11</div>
+      <div class="map-legend-item" data-page-node-id="UbjW5I7xoWnO82OqcyA7xS"><div class="map-legend-dot" style="background:#E67E22" data-page-node-id="ru25j1XhLtsX7HcZ1VVmU2"></div>D4 演唱会日 10/12</div>
+      <div class="map-legend-item" data-page-node-id="DzUKKAnZhihzG6Scfy4vhE"><div class="map-legend-dot" style="background:#3498DB" data-page-node-id="THFUhTTNJ8qd1x1B5MD0cE"></div>D5 返程日 10/13</div>
+      <div class="map-legend-item" data-page-node-id="gq8b3NFPa6QDf4Ags0RVbe"><div class="map-legend-dot" style="background:#e8654e;border-radius:0" data-page-node-id="q8EbJXrQxTZRDKPv6iuUpm"></div>酒店</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 3. CONFIRMED BOOKINGS ==================== -->
+<div class="section" data-page-node-id="tC8Pk6drUkhFmUDx04CMCb">
+  <div class="section-title" data-page-node-id="qHLQKWwKDl5GT0DJfmdIkT">已确认的机票 / 酒店 / 餐厅 / 演唱会</div>
+  <div class="booking-grid" data-page-node-id="1F3G0wgeIbAvFBC2bhNFSP">
+    <!-- Flight Outbound -->
+    <div class="booking-card flight" data-page-node-id="e8ABkhs4F7NEvzuh01yFkI">
+      <div class="bc-head" data-page-node-id="KyAFhKIVO8ZOhqePeAAJ6E"><span class="bc-title" data-page-node-id="nNRw6WUJEAcBRwL5fiwRmR">✈️ 去程 SL361</span><span class="bc-tag" data-page-node-id="30B3VCiLQX77OXwFLQqOV7">10月9日 周五</span></div>
+      <div class="bc-row" data-page-node-id="TOUw1QvohyNdwUvP0CbV7n"><b data-page-node-id="qcuOlQx2CAIcQs8WHb766D">14:20</b> 香港国际机场 T2 → <b data-page-node-id="tjkjKM4M2FoLmCwzS7PyxW">16:05</b> 曼谷廊曼机场 T1</div>
+      <div class="bc-row" data-page-node-id="Uaji97Zf6CdidvCCiaTIFg">飞行 2h45m · 泰国狮航</div>
+      <a class="bc-link" href="https://www.google.com/maps/search/?api=1&query=Don+Mueang+Airport+Bangkok" target="_blank" data-page-node-id="bwgOwVuENbBGzh46dS0ewF">📍 廊曼机场 DMK 导航</a>
+    </div>
+    <!-- Flight Return -->
+    <div class="booking-card flight" data-page-node-id="X7GT0wTBr2UwaH7vWlmcjx">
+      <div class="bc-head" data-page-node-id="OxVFqDimwAXJiLmTmdAbWu"><span class="bc-title" data-page-node-id="RejZcCA8oGCnhkoisqjJtS">✈️ 返程 UO703</span><span class="bc-tag" data-page-node-id="GR3t8XvcQiveoRIuvvGZrr">10月13日 周二</span></div>
+      <div class="bc-row" data-page-node-id="Yq6fzcROAcf1oSDK0byVxV"><b data-page-node-id="5agJrtzDTmMeZv1B60HwBl">19:40</b> 曼谷素万那普机场 → <b data-page-node-id="1zqvjHsSJ9FQykFhJEi9R9">23:40</b> 香港国际机场 T1</div>
+      <div class="bc-row" data-page-node-id="O7nm6Li0X2hGvRtHYCo6X3">飞行 3h · HK Express</div>
+      <a class="bc-link" href="https://www.google.com/maps/search/?api=1&query=Suvarnabhumi+Airport+Bangkok" target="_blank" data-page-node-id="T4jg2joZasbKwmrT1NtOcg">📍 素万那普机场 BKK 导航</a>
+    </div>
+    <!-- Hotel -->
+    <div class="booking-card hotel" data-page-node-id="K53ERGDKXOF2Lg2J9hQMFm">
+      <div class="bc-head" data-page-node-id="Jy0ELnNvoRzCZkF0XkDxVm"><span class="bc-title" data-page-node-id="SsGBIyyHU8aXJc2TG63wL6">🏨 Sindhorn Midtown</span><span class="bc-tag" data-page-node-id="PYKNlnwExToEjZLSIv3anD">4晚 10/9-10/13</span></div>
+      <div class="bc-row" data-page-node-id="SwpPfRQntgL1e32Y44PT1J">Vignette Collection by IHG · Langsuan Road, Lumphini</div>
+      <div class="bc-row" data-page-node-id="q5l2QfbIwfx5H3UFSdJnM6"><b data-page-node-id="FHntqUm6diikENUMraR2To">2间房</b> 1间标准双床 + 1间标准大床</div>
+      <div class="bc-row" data-page-node-id="7ncQazZGzvZTTjoHLY7GRA">最近BTS: Chit Lom (Exit 4) / Ratchadamri (Exit 4)，步行5分钟</div>
+      <a class="bc-link" href="https://www.google.com/maps/search/?api=1&query=Sindhorn+Midtown+Hotel+Bangkok+Langsuan" target="_blank" data-page-node-id="C0GilZlIT6FfzqXSOv3y0Y">📍 酒店导航</a>
+    </div>
+    <!-- Charmkrung -->
+    <div class="booking-card dinner" data-page-node-id="on02gd63JJfz1kgO5YvDG8">
+      <div class="bc-head" data-page-node-id="BQDTPMxp2eBcLhgi3e5JIZ"><span class="bc-title" data-page-node-id="OUKsVtxfp2jNtiqkQ2Pw42">🍽️ Charmkrung</span><span class="bc-tag" data-page-node-id="EtYvk8P5NsxtD3c1M4JiFj">已预订 10/10</span></div>
+      <div class="bc-row" data-page-node-id="Qgz14BBWCd1rAm8jKP6UHS">6楼, 839 Charoenkrung Rd, Talat Noi · 18:00-00:00</div>
+      <div class="bc-row" data-page-node-id="RmgfNyqFYRfvX2Dn3ioXPw">现代泰式 tapas + 自然酒 · 1950年代老工厂改造</div>
+      <a class="bc-link" href="https://www.google.com/maps/search/?api=1&query=Charmkrung+839+Charoenkrung+Talat+Noi+Bangkok" target="_blank" data-page-node-id="eByXQ64dRs16PsbLt1mAEr">📍 餐厅导航</a>
+    </div>
+    <!-- The Weeknd -->
+    <div class="booking-card concert" data-page-node-id="CnY1kTlRsS2ruNnXYy4Nc1">
+      <div class="bc-head" data-page-node-id="eDF04CmFZR197XgNIHQtG9"><span class="bc-title" data-page-node-id="R03m4yfUz0G2HtckS8taA7">🎤 The Weeknd</span><span class="bc-tag" data-page-node-id="C5eNCEhD9guuJLbwmHKPMu">10/12 周一 20:00</span></div>
+      <div class="bc-row" data-page-node-id="YAyAcHOkknYTzNP4h72syA">After Hours Til Dawn Tour · Rajamangala National Stadium</div>
+      <div class="bc-row" data-page-node-id="dX71UsVeQLdLCwsyQlUIur">特邀嘉宾: Creepy Nuts · ~5万人场馆</div>
+      <a class="bc-link" href="https://www.google.com/maps/search/?api=1&query=Rajamangala+National+Stadium+Bangkok" target="_blank" data-page-node-id="bDJZ5jjrXryGOBxMoOkG8V">📍 体育场导航</a>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 4. DAILY ITINERARY ==================== -->
+<div class="section" data-page-node-id="t2NBYxtvd4AALzXJXx7Aws">
+  <div class="section-title" data-page-node-id="7JvgBKcsvjecQegQ4V72n8">逐日行程</div>
+
+  <!-- DAY 1 -->
+  <div class="day-card" id="day1" data-page-node-id="WMqwZGedFv0GfQSw8JXhB9">
+    <div class="day-header" onclick="toggleDay('day1')" data-page-node-id="JzQF2eC3wzkghfv2KtezXX">
+      <div class="day-header-left" data-page-node-id="pphEjQ7YxHU6nZBDrogg3U">
+        <div class="day-badge" style="background:#FF6B6B" data-page-node-id="Fq11rGQ0eEklrye95h8V6T"><span class="d" data-page-node-id="oZOgWIkP7AI9b9wVtahUiD">1</span><span data-page-node-id="jrs2YEH12B2fnBiGNbiBie">10/9</span></div>
+        <div class="day-info" data-page-node-id="2btVXcZqI6lRJHss2xDnfY"><div class="day-date" data-page-node-id="ArLmjPMnkUJkmTplrYww0n">周五 · 到达日</div><div class="day-theme" data-page-node-id="kqCAuCBmFcfShiiZXj7MEf">落地廊曼 → 酒店 → 朱拉夜市</div></div>
+      </div>
+      <span class="day-arrow" data-page-node-id="EECe8uj2QzgA0EtiIXwqMr">▾</span>
+    </div>
+    <div class="day-body" data-page-node-id="8vd8tHh7cmzRTe5lNleopA">
+      <button class="nav-all-btn" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Banthat+Thong+Road+Night+Market+Bangkok&waypoints=Don+Mueang+Airport+Bangkok|Sindhorn+Midtown+Hotel+Bangkok','_blank')" data-page-node-id="uqVE7WbkLxrPLmUs46OSVG">🗺️ 全天多点导航</button>
+      <div class="timeline" data-page-node-id="IMst0ADXpgZOsvGTdBXuzH">
+        <div class="tl-item" data-page-node-id="zIPevmgwzW1bPS0PSt3T6C">
+          <div class="tl-time" data-page-node-id="BMO09duVdCaveVt99k5GxR">14:20</div>
+          <div class="tl-body" data-page-node-id="ydrHepKSe9golAhmRwnotd">
+            <div class="tl-title" data-page-node-id="DAKDvhZ4HMTnSGV2gZFLkd">航班 SL361 起飞 <span class="tl-badge book" data-page-node-id="Nmt7KwRfijptf3lugKuAvT">已出票</span></div>
+            <div class="tl-desc" data-page-node-id="L6M8cmujKmifdIyY05ysy5">香港 T2 → 曼谷廊曼 T1 · 飞行 2h45m</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Hong+Kong+International+Airport+Terminal+2" target="_blank" data-page-node-id="qncQaUPmY741iW5lJHQhxw">📍 香港机场导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="1BF3IbjEfNdCbruLWBfgZR">
+          <div class="tl-time" data-page-node-id="0kNLFRXAxgyriE4zLUCZ0H">16:05</div>
+          <div class="tl-body" data-page-node-id="tqVtArlQ21ro2pkkRy0785">
+            <div class="tl-title" data-page-node-id="jCDTeYnf8fFYbbRGW1Ezpu">落地廊曼机场 DMK</div>
+            <div class="tl-desc" data-page-node-id="KoBGPrYBQpd5t5WtCSSyoL">取行李 → Grab/出租车去酒店（周五晚高峰，预计45-60min）</div>
+            <div class="tl-note" data-page-node-id="HzIX5aqwHMNiy24awfXLWN">⚠️ 周五晚高峰16:00-19:30最堵，直接打车接受堵车，或坐公交到BTS Mo Chit再坐Skytrain到Chit Lom</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/dir/?api=1&destination=Sindhorn+Midtown+Hotel+Bangkok+Langsuan&origin=Don+Mueang+Airport+Bangkok" target="_blank" data-page-node-id="CBpxMoVDYp3m313GiGIauY">📍 机场→酒店导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="QM3MMggAl8rSeSBUATidRy">
+          <div class="tl-time" data-page-node-id="pspgHQTM2aBigFiirN0oj3">17:30</div>
+          <div class="tl-body" data-page-node-id="uxUNDmaN1bYc9sErnbCjn5">
+            <div class="tl-title" data-page-node-id="fYF0KGlNBWZPZ0lklhbIGW">到酒店 Check-in</div>
+            <div class="tl-desc" data-page-node-id="R15iURacj4glCmYJeBFRYd">Sindhorn Midtown, Langsuan Road · 放行李，洗漱换衣</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Sindhorn+Midtown+Hotel+Bangkok" target="_blank" data-page-node-id="EotK6GA7eIW3Wu7gqxW45D">📍 酒店导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="3cS1qvo20kG6AlllBTRUBR">
+          <div class="tl-time" data-page-node-id="RY3xArxucfhIo3gU6F5ywG">18:30</div>
+          <div class="tl-body" data-page-node-id="ENFXeuB7AGTcCbylmSIeap">
+            <div class="tl-title" data-page-node-id="E17dAxZVye5NetbG05WbVL">晚餐 Puponfai & Zapponfai <span class="tl-badge walkin" data-page-node-id="gL4OSOXTKbFVyfD3ogEJfh">walk-in</span></div>
+            <div class="tl-desc" data-page-node-id="MuJ5Rul03YaH9yBBOjcqqh">22 Soi Chula 15, Banthat Thong Rd · 海鲜/冬阴功 · 近Sam Yan MRT</div>
+            <div class="tl-note" data-page-node-id="VPbww4nk7Eu1ZfSofO1hbZ">如果到酒店较晚，可改外卖点Puponfai回酒店吃，然后逛Siam站附近商场</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Puponfai+Zapponfai+Banthat+Thong+Bangkok" target="_blank" data-page-node-id="mm49CHpxWuBGIhPEGDCmts">📍 餐厅导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="AnQiZe1rOHvOg6ScbX93BI">
+          <div class="tl-time" data-page-node-id="2NYeRcdCTNdkEqHrgBXsVJ">19:30</div>
+          <div class="tl-body" data-page-node-id="q5x8RlDZbQ2Zv13hwZy8nE">
+            <div class="tl-title" data-page-node-id="HV1H7wMTZ0lkzDnfS5pyOk">朱拉隆功夜市 (Banthat Thong) 溜达</div>
+            <div class="tl-desc" data-page-node-id="QazIMBKWOjAsj1BG61YpnS">Banthat Thong Rd · 每日傍晚营业 · 平价地道小吃 + 学生氛围</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Banthat+Thong+Road+Bangkok" target="_blank" data-page-node-id="W6MUt9u3xjmHXiOutLCnxF">📍 夜市导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="H1RLy0GIx81H7r4n6pQCIQ">
+          <div class="tl-time" data-page-node-id="IRW1WfOo36B8lCuPeRfI2r">21:00</div>
+          <div class="tl-body" data-page-node-id="fZs1nixND83Yr3ECVlB4d8">
+            <div class="tl-title" data-page-node-id="sL2aFgFV1CyAaPnFHICSXP">按脚放松 <span class="tl-badge walkin" data-page-node-id="nBwIDiOPi6KFjCuP26UHzc">walk-in</span></div>
+            <div class="tl-desc" data-page-node-id="bckt1bnthEQe7AKOtM3GEw">Let's Relax (Siam/Chit Lom附近) 或 Makkha (Sukhumvit 33)</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Let%27s+Relax+Spa+Chit+Lom+Bangkok" target="_blank" data-page-node-id="8XzHrYiz0S6sqazAxQVkMP">📍 Let's Relax导航</a>
+            <span style="font-size:11px;color:var(--text3)" data-page-node-id="IBBxXjkEpYibdlpY5oHqFQ"> · </span>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Makkha+Health+Spa+Sukhumvit+33+Bangkok" target="_blank" data-page-node-id="pTBDWLfHMguHmEsg111vuL">📍 Makkha导航</a>
+          </div>
+        </div>
+        <div class="tl-outfit" data-page-node-id="KNqsTqGw3woQHEdBr8uCNH"><b data-page-node-id="nMEgJCWUr5ShQMTAsQhSap">着装</b> · 场景：飞行+夜市溜达 · Vibe：舒适休闲，好穿脱的鞋</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card" id="day2" data-page-node-id="J49KWGU8L0BIGKxmGMoKsb">
+    <div class="day-header" onclick="toggleDay('day2')" data-page-node-id="TH73yH1A6sWREVsAuwDA1n">
+      <div class="day-header-left" data-page-node-id="rHwJCC8BYMbJSH6l4n3M1G">
+        <div class="day-badge" style="background:#4ECDC4" data-page-node-id="csklNGW6zqIbJYRjJElIKs"><span class="d" data-page-node-id="wN209wV8X0y8eal9UZEtMT">2</span><span data-page-node-id="JF0FmnXc6aukGImlPm3bzz">10/10</span></div>
+        <div class="day-info" data-page-node-id="81z94aqPhDA3DnVbGma42u"><div class="day-date" data-page-node-id="UACZLSjYe1lBYdARSEnqTs">周六 · Charmkrung日</div><div class="day-theme" data-page-node-id="AUr5dS456uVzgOweWC40nN">Ari brunch → Song Wat → 晚餐 → 酒吧</div></div>
+      </div>
+      <span class="day-arrow" data-page-node-id="hwfx8B9xVsKVbyFjDut1MP">▾</span>
+    </div>
+    <div class="day-body" data-page-node-id="C1vOhiO7k9nfldSGLC8Boc">
+      <button class="nav-all-btn" style="background:#4ECDC4" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=G.O.D+Bar+Soi+Nana+Bangkok&waypoints=Ace+Jolun+264+Phahonyothin+Road+Bangkok|BTS+Ari+Station+Bangkok|Song+Wat+Road+Bangkok|Charmkrung+839+Charoenkrung+Talat+Noi+Bangkok','_blank')" data-page-node-id="NCc3lHVzs9RocAl2AXFC08">🗺️ 全天多点导航</button>
+      <div class="timeline" data-page-node-id="0WnHU9a0Bpx2a6nqcrwVXc">
+        <div class="tl-item" data-page-node-id="dXBEHNxEwMJZ0RQkM3HFHL">
+          <div class="tl-time" data-page-node-id="qB3ynqAg7h6xc4FqJMok4v">09:00</div>
+          <div class="tl-body" data-page-node-id="Xmbcix2CkG85soCAo0sFEs">
+            <div class="tl-title" data-page-node-id="ZfMfDeuZK5he3M4oDqBo9T">Brunch: ACE JOLUN</div>
+            <div class="tl-desc" data-page-node-id="wDYGfrFeenfyp0aYCMPHDd">264, 266 Phahonyothin Rd, Samsen Nai, Phaya Thai · 近BTS Sanam Pao/Ari</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Ace+Jolun+264+Phahonyothin+Road+Bangkok" target="_blank" data-page-node-id="nuYH7EHeAd1rUVdjmTgyc9">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="fdezt1yfFTgHVVFW0T5oOc">
+          <div class="tl-time" data-page-node-id="BhDxayFIcVQKskSJemJqCY">10:30</div>
+          <div class="tl-body" data-page-node-id="0mYmeaclGhmALMr3IRNNGz">
+            <div class="tl-title" data-page-node-id="ia13RNVSY9VnfkhHeaqxFM">逛 Ari 街区</div>
+            <div class="tl-desc" data-page-node-id="HZeM2AKhcrT48xKWYGptYp">BTS Ari站 · 咖啡/vintage小店/leafy街道 · 慢节奏本地生活感</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=BTS+Ari+Station+Bangkok" target="_blank" data-page-node-id="8PqXYz2lGx8MZzGuVWJiM1">📍 Ari站导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="3RRyaAczb7WVaF2izrY3BH">
+          <div class="tl-time" data-page-node-id="UVZjpqVA9XAPWKNvyWYZWr">12:00</div>
+          <div class="tl-body" data-page-node-id="sEcke5FTETp5xnKO2Bmrht">
+            <div class="tl-title" data-page-node-id="WYIkEIcER4y7cpbZTz5R8Z">回酒店休息</div>
+            <div class="tl-desc" data-page-node-id="7XgvO8FtIBMYusPGjQOnXZ">BTS Ari → BTS Chit Lom → 步行回酒店 · 泳池/换装</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="FERu2qz0e8XeqtT1S4Hj8b">
+          <div class="tl-time" data-page-node-id="6EPH0NcZm9xDH8gnpqFWK0">14:30</div>
+          <div class="tl-body" data-page-node-id="cz2v0ID1vIW8J0LyhuG5RN">
+            <div class="tl-title" data-page-node-id="ToAN46HI8DrJHG7FV7w1av">出发去 Song Wat 路</div>
+            <div class="tl-desc" data-page-node-id="9PBOAqcH2Z7Cu1PKHYpzv4">BTS Chit Lom → Saphan Taksin → 步行/Grab到Song Wat</div>
+            <div class="tl-note" data-page-node-id="1kxUEUHDFNfOHzhmuVq8pE">周六下午交通还行，这段约30-40min</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="F34P7PJYZtBkNQYLzALFQn">
+          <div class="tl-time" data-page-node-id="huUVuWZM7Kszp3yZ28kVJJ">16:00</div>
+          <div class="tl-body" data-page-node-id="ywGYGebDfbynykCo0kp8nS">
+            <div class="tl-title" data-page-node-id="0FOAajgPJ9colX0joiBDhf">逛 Song Wat 路 (老城区)</div>
+            <div class="tl-desc" data-page-node-id="l3q147u8ez7BzHskCQ7W9I">百年店屋 + 精品咖啡 + 街头艺术 · 离Yaowarat唐人街步行5分钟 · 拍照好去处</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Song+Wat+Road+Bangkok" target="_blank" data-page-node-id="b8hF0uw37yJVayfJXKfpHM">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="IEi7SjAPKjH6yQaQLsDiWt">
+          <div class="tl-time" data-page-node-id="JB3pjmJik7yS6aDJHa4dEn">18:00</div>
+          <div class="tl-body" data-page-node-id="0Rh3B3tWOEn7gJTdyQyW1F">
+            <div class="tl-title" data-page-node-id="7VdkJfUp0XAxllXysPDc2y">Charmkrung 晚餐 <span class="tl-badge book" data-page-node-id="GMHj62i88CsdvOZF87i1jO">已预订</span></div>
+            <div class="tl-desc" data-page-node-id="5V0ARZSlTaCmvwC5CDXb1F">6楼, 839 Charoenkrung Rd, Talat Noi · 现代泰式tapas + 自然酒 · 别错过curry</div>
+            <div class="tl-note" data-page-node-id="JGiBht1Fktb081lB0ZTzrA">Song Wat 和 Charmkrung 都在Talat Noi/Charoenkrung一带，步行可达</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Charmkrung+839+Charoenkrung+Talat+Noi+Bangkok" target="_blank" data-page-node-id="Skm4067bNQi8mPUaHCmCWq">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="KcS2PZJuHNy9tCdN9hBVTr">
+          <div class="tl-time" data-page-node-id="fcMBYnwZwNjdCS9TNEzttt">20:30</div>
+          <div class="tl-body" data-page-node-id="Lr4qOHLoFOTfOdxH9wNxwc">
+            <div class="tl-title" data-page-node-id="QUWBLyFAIpnoqL1aPJEaA4">G.O.D. Bar (Genius On Drugs) <span class="tl-badge walkin" data-page-node-id="Em0ciCAinaFNDHAwk32xnk">walk-in</span></div>
+            <div class="tl-desc" data-page-node-id="zBo1wPevV5ErWY9lYQePHL">Soi Nana, 唐人街Yaowarat · 鸡尾酒 · 门把手是cocktail shaker</div>
+            <div class="tl-note" data-page-node-id="lcqFESwQP8fDX9C0MftLop">跟Charmkrung步行距离！散场直接走过去</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=G.O.D+Bar+Soi+Nana+Bangkok" target="_blank" data-page-node-id="spDW2imgCcKB1sZG5cQcns">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-outfit" data-page-node-id="uDUVeNSRnlf4hr0bGyMWq9"><b data-page-node-id="5HOA76PwcT0fnBTeU1Cn1W">着装</b> · 场景：白天brunch+老城街拍，晚上餐厅+酒吧 · Vibe：白天清爽休闲，晚上smart casual微精装</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card" id="day3" data-page-node-id="N27C6GrSWLldFsHhsETmVU">
+    <div class="day-header" onclick="toggleDay('day3')" data-page-node-id="1pGX4DY5do4sAOtGeGnBeI">
+      <div class="day-header-left" data-page-node-id="GC7TowFIo9IraxvNeS2FTh">
+        <div class="day-badge" style="background:#9B59B6" data-page-node-id="DfaEodmBEQeAYWCYd2gy8S"><span class="d" data-page-node-id="acwBT4O8oSzsaAtOHHae91">3</span><span data-page-node-id="QcJZx4WIqw3DRfEfJ1VmDl">10/11</span></div>
+        <div class="day-info" data-page-node-id="zlzxDf5EOb1pqb1yNwBQnX"><div class="day-date" data-page-node-id="h9NGYafdI0EfPx54hO4B1y">周日 · 下午茶日</div><div class="day-theme" data-page-node-id="YvGTTD0gmAdRjV4ivAoWsY">酒店咖啡 → 下午茶 → 按摩 → 逛街 → 晚餐 → 酒吧</div></div>
+      </div>
+      <span class="day-arrow" data-page-node-id="R5wH2sS1FcXr1vvVumAVQ7">▾</span>
+    </div>
+    <div class="day-body" data-page-node-id="YafXnkBTUE5u7PfiRCL4VH">
+      <button class="nav-all-btn" style="background:#9B59B6" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Abandoned+Mansion+Sukhumvit+14+Bangkok&waypoints=Patom+Organic+Living+Sukhumvit+49+Bangkok|Oasis+Spa+Sukhumvit+31+Bangkok|EMSphere+Phrom+Phong+Bangkok|The+Local+Oamthong+Sukhumvit+23+Bangkok','_blank')" data-page-node-id="DJHPYxFS6ijRAAxpafFfme">🗺️ 全天多点导航</button>
+      <div class="timeline" data-page-node-id="xHjuizYBghzVLtngxcC04x">
+        <div class="tl-item" data-page-node-id="GfCHFpKjmohbVWBWAXxYjW">
+          <div class="tl-time" data-page-node-id="O18GKxZsfss38gFLbVrx1C">09:00</div>
+          <div class="tl-body" data-page-node-id="ATz8EO4RQqxxDvr6rye4Mq">
+            <div class="tl-title" data-page-node-id="6xt13GFpdwCkbD3nBF3Moq">酒店外卖咖啡 + 游泳</div>
+            <div class="tl-desc" data-page-node-id="ZVjboNtaIpDdpjhzmgPXfy">不早起排队Factory了 · 酒店泳池晨泳 · 慢节奏开启一天</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="tWNGajYvlWsRVtv1kmBcGC">
+          <div class="tl-time" data-page-node-id="msEbGO9JUpdQV3ljuTqCWb">11:00</div>
+          <div class="tl-body" data-page-node-id="oGSH1farsx4Fd4tr7pV3BZ">
+            <div class="tl-title" data-page-node-id="GFkuUaStIMl12ra2tCBNSS">Patom Organic Living 下午茶</div>
+            <div class="tl-desc" data-page-node-id="CnkijmISLDDgAH91qMn7n2">9/2 Sukhumvit 49/6 · 玻璃温室咖啡馆 · 有机花园 · 近BTS Phrom Phong · 周二-周日 09:00-18:30</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Patom+Organic+Living+Sukhumvit+49+Bangkok" target="_blank" data-page-node-id="gXBx4dB8oie0tFfAa8abWU">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="YXORKoku9E2G2oCMlx1wY7">
+          <div class="tl-time" data-page-node-id="KMNy0Asp2FHdkpK68k5uYx">13:00</div>
+          <div class="tl-body" data-page-node-id="7H2K0gbfNc41bXZAzBMmYU">
+            <div class="tl-title" data-page-node-id="uETr0hd6EMe2m8MgKnv9Lj">Sukhumvit区City Walk</div>
+            <div class="tl-desc" data-page-node-id="eBVG8ZhylBDf2YwCmGIAgf">Phrom Phong一带逛逛 · 拍照</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="t2kbiOQNDpYb41lvv0NYDP">
+          <div class="tl-time" data-page-node-id="V0vK2MhmjUkESB70D6baMT">14:00</div>
+          <div class="tl-body" data-page-node-id="dYEicOjDiD17O8UjYpIfWd">
+            <div class="tl-title" data-page-node-id="PLAFYICjb3ymEpnSC3QSAK">全身按摩 #1: Oasis Spa <span class="tl-badge need" data-page-node-id="8TptWCxzuCUmkGNFx23ydK">需预订</span></div>
+            <div class="tl-desc" data-page-node-id="cgBQzBNBi68tHsRT5sfSf4">Sukhumvit 31 · 花园式luxury spa · 12间理疗室 · 近BTS Phrom Phong</div>
+            <div class="tl-note" data-page-node-id="miiQtSFe38rryZScQKfOEK">建议预订120分钟「帝王」或「女王」按摩 · 官网 oasisspa.net</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Oasis+Spa+Sukhumvit+31+Bangkok" target="_blank" data-page-node-id="H1MhbLZasplra7smSziJlY">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="VphPtjCYUfLu0xpm0na2eA">
+          <div class="tl-time" data-page-node-id="1BHeXacevpnsDlgm2YJ5xJ">16:00</div>
+          <div class="tl-body" data-page-node-id="twl82LUOSNySlpu7f1F4wD">
+            <div class="tl-title" data-page-node-id="VIvKmnzpDnybn33iQzlGM5">逛 Asok/Phrom Phong 商圈</div>
+            <div class="tl-desc" data-page-node-id="EUDfa8EluzPj8BYmxXG18h">EMSphere (2023新开未来感商场) + EMQuartie + Terminal 21</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=EMSphere+Phrom+Phong+Bangkok" target="_blank" data-page-node-id="SZxEfVXSg4BWwsr2gMzeJj">📍 EMSphere导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="wtEQuuJInXpsl6yhDFBOuX">
+          <div class="tl-time" data-page-node-id="9zEYa0mKO5TQPDRfIj6DlX">18:30</div>
+          <div class="tl-body" data-page-node-id="8BJ1SKZBxsxNM4ypfWLOuf">
+            <div class="tl-title" data-page-node-id="PReGKEhBHEKekTryhbQ8fy">晚餐 (二选一) <span class="tl-badge option" data-page-node-id="YUUG4xBoCd3RHoH8KrLSdj">备选</span></div>
+            <div class="tl-desc" data-page-node-id="1oQT7Iu2U1NExN058Tj9FO"><b data-page-node-id="FK3AYQ7IGeXw9kShXsJhJA">A. The Local</b> · 32/1 Soi Sukhumvit 23 · 米其林推荐泰餐 · 建议预订</div>
+            <div class="tl-desc" data-page-node-id="grnjuXm1HAEE3PSxHWjdve"><b data-page-node-id="oHrXDhL9N0dyXZgXhbkgb7">B. Oyster Mania</b> · Sukhumvit 31 · 生蚝专门店 · 4.9分 · walk-in</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=The+Local+Oamthong+Thai+Cuisine+Sukhumvit+23+Bangkok" target="_blank" data-page-node-id="4RQa92xQ5Xu8W7pmdEfpUG">📍 The Local导航</a>
+            <span style="font-size:11px;color:var(--text3)" data-page-node-id="X4D0eRX8W14OTNBc2OoD2A"> · </span>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Oyster+Mania+Sukhumvit+31+Bangkok" target="_blank" data-page-node-id="eMqcXR7s1FOY0XgrYBp6nx">📍 Oyster Mania导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="0Deu0vDTbbJzN9ZIqXGexJ">
+          <div class="tl-time" data-page-node-id="0PlZeSc2smoM8LD0iF03V7">21:00</div>
+          <div class="tl-body" data-page-node-id="JpGba3SzmjTxCv0ccYqNkz">
+            <div class="tl-title" data-page-node-id="hN10MVQSmOSKXHw3NMfC5O">Abandoned Mansion 酒吧 <span class="tl-badge walkin" data-page-node-id="2peuDuvTLZiI189ebUpzQJ">walk-in</span></div>
+            <div class="tl-desc" data-page-node-id="wb3qVJhfc3vQ0g8pBGTerL">Sukhumvit 14, The Coach Hotel地下 · 1930s黑帮主题speakeasy · 现场音乐</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Abandoned+Mansion+Sukhumvit+14+Bangkok" target="_blank" data-page-node-id="P2h7gqqc5qDpz8LWYKmuTQ">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-outfit" data-page-node-id="wcLrVl2Zxrirs3BxyPr9cM"><b data-page-node-id="cK42XFxHRBMPkNWlEwfDTe">着装</b> · 场景：下午茶+逛街+晚餐+酒吧 · Vibe：全天精致，适合拍照 · 酒吧smart casual · 空调强备薄外套</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card" id="day4" data-page-node-id="p2lUptD3v1BRFBQ7ECeB9f">
+    <div class="day-header" onclick="toggleDay('day4')" data-page-node-id="gRs4v1U0knoiGCx64qn2wE">
+      <div class="day-header-left" data-page-node-id="RZfi8DY3VERzsRrxD3oLDF">
+        <div class="day-badge" style="background:#E67E22" data-page-node-id="aUhM7DbwQCdex3jMtTDBkO"><span class="d" data-page-node-id="vNgR4QWEof0lH6o7pgvItt">4</span><span data-page-node-id="rgGGWlkk1go3QGKdMaCqFz">10/12</span></div>
+        <div class="day-info" data-page-node-id="BWh58TlI159RP7146jx9O7"><div class="day-date" data-page-node-id="hABtHqpMlAlnu7cBhmmf4q">周一 · 演唱会日</div><div class="day-theme" data-page-node-id="p6Zaq86vvjJJqwHVyvcXUk">Siam逛街 → Inter午餐 → 收拾打扮 → The Weeknd</div></div>
+      </div>
+      <span class="day-arrow" data-page-node-id="CqCKRBjB6HBBCUwoBe71g2">▾</span>
+    </div>
+    <div class="day-body" data-page-node-id="URFOAplPGHFLHNGc9PS25y">
+      <button class="nav-all-btn" style="background:#E67E22" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Rajamangala+National+Stadium+Bangkok&waypoints=Siam+Paragon+Bangkok|Inter+Restaurant+Siam+Square+Soi+9+Bangkok|Makkasan+Airport+Rail+Link+Station+Bangkok|Ramkhamhaeng+Airport+Rail+Link+Station+Bangkok','_blank')" data-page-node-id="hyrTdKBohlvLK6ypk2mnwk">🗺️ 全天多点导航</button>
+      <div class="timeline" data-page-node-id="YKHRSy28QsageSHJ4qKaO3">
+        <div class="tl-item" data-page-node-id="wn9WSlgerukEBoXxafRvTL">
+          <div class="tl-time" data-page-node-id="nR1F8SAGi5heI7zXXKITGQ">09:00</div>
+          <div class="tl-body" data-page-node-id="1w7C8egp66dGWEcFG0R7hi">
+            <div class="tl-title" data-page-node-id="vJOzfsaOlBmAT2cnSVljmj">逛 Siam 商圈</div>
+            <div class="tl-desc" data-page-node-id="s8kW3ozF8gqKuGvQvp9FoL">Siam Paragon / Siam Center / Siam Discovery · BTS Siam站</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Siam+Paragon+Bangkok" target="_blank" data-page-node-id="aDjLiJNavMbekS2rHynT43">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="ccs8dSfK973bnpBumtaupe">
+          <div class="tl-time" data-page-node-id="ybVGIFBJrQiyjEC5cF00YL">12:00</div>
+          <div class="tl-body" data-page-node-id="5aOicETj0P93MP8NyVZGCd">
+            <div class="tl-title" data-page-node-id="HstsvWYedACDhab25itEIK">午餐: Inter Restaurant <span class="tl-badge walkin" data-page-node-id="hHqlCotHXJ8Q0phxl1nMXj">walk-in</span></div>
+            <div class="tl-desc" data-page-node-id="xE3HzDhdYGzNK619SrboDc">432/1-2 Siam Square Soi 9 · 1981年老店 · 泰式/泰中 · 平价 · 每日11:00-20:30</div>
+            <div class="tl-note" data-page-node-id="OHZsUBuEdr61DiGoJtIwuF">推荐: 蚵仔煎、奶奶炒饭、鸡翅 · 工作日12点前或2点后人少</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Inter+Restaurant+Siam+Square+Soi+9+Bangkok" target="_blank" data-page-node-id="AJyoIbTyila3EI4f9yoa5t">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="SwYBYbyRcGv0NEKnoqvp12">
+          <div class="tl-time" data-page-node-id="qlYU3PDvY99T6mNxI2NnFw">13:30</div>
+          <div class="tl-body" data-page-node-id="59hF20OxrLPI2szNcPyLHT">
+            <div class="tl-title" data-page-node-id="OdwXj6vdJ9AQMZDrzOU1Sr">回酒店收拾打扮</div>
+            <div class="tl-desc" data-page-node-id="CwQAFSjwiEHGk4rUuDaSid">BTS Siam → Chit Lom → 步行回酒店 · 换演唱会穿搭 · 充电</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="2xUGYZTnwEwvvCRQwnnya1">
+          <div class="tl-time" data-page-node-id="cWJFR66wy9lItNdpmI0BZA">17:00</div>
+          <div class="tl-body" data-page-node-id="GNpAvQ1JZX7kHA6vE51Vz7">
+            <div class="tl-title" data-page-node-id="yoYZDlVGn5vA5mEDmuvlHV">出发去 Rajamangala 体育场</div>
+            <div class="tl-desc" data-page-node-id="WHhjmWXVmls7XjJdAuNETl"><b data-page-node-id="gZcJDfWwj62rY5wk2dNHx3">路线:</b> BTS Chit Lom → BTS Phetchaburi → 步行5min到Makkasan ARL站 → ARL到Ramkhamhaeng站 → 摩的/Grab到体育场(最后3km)</div>
+            <div class="tl-note" data-page-node-id="gjaayYbVSJihxaajt6Hcza">⚠️ 周一晚高峰16:00-19:30最堵！别直接打车。ARL+摩的 最稳。全程约50-60min。提前到场逛逛merch</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/dir/?api=1&destination=Rajamangala+National+Stadium+Bangkok&origin=Makkasan+Airport+Rail+Link+Station+Bangkok" target="_blank" data-page-node-id="vhmY6mo7see1cp0ZdA8GN4">📍 Makkasan→体育场导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="0CXJSpJqZIFjfedDU0HPa9">
+          <div class="tl-time" data-page-node-id="7gu8I5kKnFCSfDMzrKLqwR">20:00</div>
+          <div class="tl-body" data-page-node-id="187c21aXdzVyFw0YtnssAO">
+            <div class="tl-title" data-page-node-id="GnV7e65nQ4imWbmF9HysUV">The Weeknd 演唱会 <span class="tl-badge book" data-page-node-id="6ljCTYM8NMUJ7iuyZZLe34">已购票</span></div>
+            <div class="tl-desc" data-page-node-id="ht8Brxw3Zq4H8JgyhRVMzq">After Hours Til Dawn Tour · Rajamangala National Stadium · 特邀嘉宾Creepy Nuts</div>
+            <div class="tl-note" data-page-node-id="azMgg3mQDvaY7L2woTik2a">穿磨合好的鞋！场馆大走路多 · 带充电宝 · 备雨衣(10月可能阵雨) · 约定散场碰头点(信号可能拥堵)</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Rajamangala+National+Stadium+Bangkok" target="_blank" data-page-node-id="qvSaLWGs2SFCx0EJrtvFBX">📍 体育场导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="0P7K9QaGcA2NPwEHBKPjOV">
+          <div class="tl-time" data-page-node-id="h3hHSOPQ8MZGIkPwIFle88">~23:00</div>
+          <div class="tl-body" data-page-node-id="HfBr3GyIBp6nYErZhMxqcM">
+            <div class="tl-title" data-page-node-id="wvBj1H6TnOT0WnDLz0BFXh">散场返回</div>
+            <div class="tl-desc" data-page-node-id="WFrS1R5PD0JHn9xIhJVMEU"><b data-page-node-id="z6z1z3inMvqiACKnBSpUG6">方案A:</b> 摩的到Ramkhamhaeng ARL站 → ARL到Makkasan → BTS回Chit Lom</div>
+            <div class="tl-desc" data-page-node-id="ag24k1zWnQvkhB6WNtjK6v"><b data-page-node-id="7JR5ZA7euCzyuoXbX0IqMT">方案B:</b> 在附近餐厅等60-90min，交通缓解后再Grab</div>
+            <div class="tl-note" data-page-node-id="qdYVNLgyTNzLIWE7ojwpmB">⚠️ 5万人同时离场，Ramkhamhaeng路直接瘫痪。打车/Grab几乎不可能接单。别在大门口打车！</div>
+          </div>
+        </div>
+        <div class="tl-outfit" data-page-node-id="L0chq0fywejLWu19tsbbd3"><b data-page-node-id="Ac5HIDCDYUSPyW6EoVk2y7">着装</b> · 场景：白天逛街+晚上演唱会 · Vibe：酷感休闲 · 必须穿磨合好的鞋 · 备薄外套防夜间24°C+场馆空调</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5" data-page-node-id="4XetjnH19sSGygRiMCwORu">
+    <div class="day-header" onclick="toggleDay('day5')" data-page-node-id="iCB8ujPiR6jGecZjGGfg0h">
+      <div class="day-header-left" data-page-node-id="RC13m6oiLEiOmtxegRRrK3">
+        <div class="day-badge" style="background:#3498DB" data-page-node-id="f6b4mKuuFIk0CUbb2wxl54"><span class="d" data-page-node-id="ynOGUlkvL4ywf4D5soMIOy">5</span><span data-page-node-id="dr0QQrpUXgXfEBaKPK1y21">10/13</span></div>
+        <div class="day-info" data-page-node-id="SDVmozhjAG5ME3P5ni87LI"><div class="day-date" data-page-node-id="6oMHf2C1BP8K0eSclmWacE">周二 · 返程日</div><div class="day-theme" data-page-node-id="3le794nJcq0hTHh0qN1EH1">伦批尼晨溜 → 退房 → 尚泰/BigC → 机场</div></div>
+      </div>
+      <span class="day-arrow" data-page-node-id="OwKCF7XJGpyQWmjGugOyE3">▾</span>
+    </div>
+    <div class="day-body" data-page-node-id="W4D1PG40nti2YRsLelkRn9">
+      <button class="nav-all-btn" style="background:#3498DB" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Suvarnabhumi+Airport+Bangkok&waypoints=Lumpini+Park+Bangkok|Central+Embassy+Bangkok|Big+C+Rachadamri+Bangkok','_blank')" data-page-node-id="yadtsFi5Ai0CVRlmGC7OJA">🗺️ 全天多点导航</button>
+      <div class="timeline" data-page-node-id="UmEGHHfHQbJScsisK1A876">
+        <div class="tl-item" data-page-node-id="nYiMDKmqpLwEa8NvSAqZke">
+          <div class="tl-time" data-page-node-id="TFe1JoOGnw2e6mqJPYXTFA">07:00</div>
+          <div class="tl-body" data-page-node-id="tKeHro68MhWEAeTBGnHknv">
+            <div class="tl-title" data-page-node-id="USoIsPtrAGoNUlPGifKL9r">伦批尼公园晨间溜达</div>
+            <div class="tl-desc" data-page-node-id="WE0BucgpGz9LBFtGpB44ca">Lumpini Park · 酒店步行5分钟 · 晨光+ monitor lizard大蜥蜴 · 最后的曼谷清晨</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Lumpini+Park+Bangkok" target="_blank" data-page-node-id="Vqi0rhLY1Li71ftXtctaxN">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="c1CN9BnVPLnwfs3L8WUlea">
+          <div class="tl-time" data-page-node-id="rKZC49ZboJuD8EjGGrQs3R">09:00</div>
+          <div class="tl-body" data-page-node-id="MzXM9MvGtkNEjSCVAS4Zi9">
+            <div class="tl-title" data-page-node-id="NvCGCrnpc0cNM9cQpg7Waa">早餐 + 收拾行李</div>
+            <div class="tl-desc" data-page-node-id="TpIv11wDbqgIKQGV6ebGIs">酒店早餐 · 整理行李</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="y1riDUroEjasKzD6dkvTkK">
+          <div class="tl-time" data-page-node-id="0p3hubK2dvjySSJ2IHOFTY">11:00</div>
+          <div class="tl-body" data-page-node-id="M9qhtw3DLyUZNpFjwqI2UR">
+            <div class="tl-title" data-page-node-id="7LXmzQG2MMSiIgqEq8iRAd">Check-out · 寄存行李</div>
+            <div class="tl-desc" data-page-node-id="W56v1GcBzynkDmk2YGSWwh">退房，行李寄存前台</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="B1CjwsIhgiWqgydGPbIbgq">
+          <div class="tl-time" data-page-node-id="oqSnpL0llP0zvO02N6q8Ep">11:30</div>
+          <div class="tl-body" data-page-node-id="TGlBYsShiPFGAZsyWO72aD">
+            <div class="tl-title" data-page-node-id="QwVov6FNFezJcRyCBeAAk0">逛尚泰 Central Embassy / Central Chidlom</div>
+            <div class="tl-desc" data-page-node-id="3wRXHbJi3fH8GE4MvmXA2X">步行可达 · 10/13公共假期，商场正常营业 · 最后采购</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Central+Embassy+Bangkok" target="_blank" data-page-node-id="7eXRBLs0pSASLj53aOiaFV">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="UV0h6PqXCoe0BK2KRHnflp">
+          <div class="tl-time" data-page-node-id="yfgr8zYrt9e4jGXDCiYaMw">13:00</div>
+          <div class="tl-body" data-page-node-id="HPCSCbwUVNNfG1zGl38p1d">
+            <div class="tl-title" data-page-node-id="EvFWBnEC2F1zYqAR172tFa">Big C 采购伴手礼</div>
+            <div class="tl-desc" data-page-node-id="bLbZ0P4NlZP1f83FZgnIFO">Big C Ratchadamri · 零食/调料/药妆 · 平价最后扫货</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Big+C+Rachadamri+Bangkok" target="_blank" data-page-node-id="mzdL9ybAD2TXACSawUjhv9">📍 导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="sKIQ1mYWHqG6SlcYtsxC02">
+          <div class="tl-time" data-page-node-id="XYGlVbMQG0Y8Shlqtqdba0">15:00</div>
+          <div class="tl-body" data-page-node-id="XFJqwzHCPImrSlkVbZSgMe">
+            <div class="tl-title" data-page-node-id="6J3gaub7niGVtfcXRfF2sW">商场午餐/晚餐</div>
+            <div class="tl-desc" data-page-node-id="8fOBFXkjeyPDKclKylNTiy">商场food court或餐厅解决 · 取行李</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="D7tG2fI3YkVr7icZTCn8tn">
+          <div class="tl-time" data-page-node-id="JuZuT68KJlEGNSaybYImBb">16:00</div>
+          <div class="tl-body" data-page-node-id="3BKE7OK6Z7rjaYXxmFKPyP">
+            <div class="tl-title" data-page-node-id="MvbjRoFf7HUuZfV2wySG6N">出发去素万那普机场 BKK</div>
+            <div class="tl-desc" data-page-node-id="KDMp56U6vFOXfbfXjfoBdV"><b data-page-node-id="Ty7KnlBkGnx8ufAUQtXXBW">方案A:</b> BTS Chit Lom → Phaya Thai → ARL直达素万那普(30min) · <b data-page-node-id="CHBPnfzCDlEIfkWB6WJ1VI">方案B:</b> Grab(非高峰约35min)</div>
+            <div class="tl-note" data-page-node-id="Q7uizGUbbHkONezEgrfYsZ">10/13是普密蓬国王纪念公共假期。ARL正常运营。银行关但商场开。提前2h到机场</div>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="JjTnd3EGQDrY7fbTd3x8dG">
+          <div class="tl-time" data-page-node-id="6Do2VWFVUCYlKBAjFm6vVD">17:30</div>
+          <div class="tl-body" data-page-node-id="5KHaeQPlvgtJfI6IC1CyFV">
+            <div class="tl-title" data-page-node-id="hm7kFDevQASDFJQFQ4VncD">到达素万那普机场</div>
+            <div class="tl-desc" data-page-node-id="V7qMItwF9WnqbcEknj2zer">值机 · 安检 · 免税店最后逛</div>
+            <a class="tl-loc-link" href="https://www.google.com/maps/search/?api=1&query=Suvarnabhumi+Airport+Bangkok" target="_blank" data-page-node-id="IYdepTwASYi9rw7Ub3QEwl">📍 机场导航</a>
+          </div>
+        </div>
+        <div class="tl-item" data-page-node-id="xDz5wBqvTwCRBWOVN2BSCK">
+          <div class="tl-time" data-page-node-id="wxgwx3WNTU5LfjbwWMFxHb">19:40</div>
+          <div class="tl-body" data-page-node-id="xvUPePVI82yqHI9j7O44Ye">
+            <div class="tl-title" data-page-node-id="6DggqB5FYTGFGZYuKdFawr">航班 UO703 起飞 <span class="tl-badge book" data-page-node-id="GMLwuJOxiahK2nyqLAcFAc">已出票</span></div>
+            <div class="tl-desc" data-page-node-id="9v1xDroLcrExLxf9JDaEwc">素万那普 BKK → 香港 T1 · 飞行 3h · HK Express</div>
+          </div>
+        </div>
+        <div class="tl-outfit" data-page-node-id="LJmZrD2GPZGQnUTxfTWxjL"><b data-page-node-id="4zTIFYWBO8tEB3Lwoakuu4">着装</b> · 场景：晨跑+购物+飞行 · Vibe：舒适旅行装 · 好走路好坐飞机</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 5. TODO LIST ==================== -->
+<div class="section" data-page-node-id="Smo1Tt1K8eYzy4rn8SezS8">
+  <div class="section-title" data-page-node-id="0iyseZ406NkvIUi88LpWWS">待办清单</div>
+  <div style="background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:8px 16px" data-page-node-id="GvaEXAj2PE76iTcjBaY3nN">
+    <ol class="todo-list" data-page-node-id="Et0Ufr53FEHCeAXUkJJKRb">
+      <li class="todo-item urgent" data-page-node-id="d3oLlL1shFyzKijagMsBDs">预订 Oasis Spa (10/11 14:00)<small data-page-node-id="o4KVfnvgyEMJtAQNwB7u4K">官网 oasisspa.net 或到店预订 · 建议120分钟「帝王」按摩</small></li>
+      <li class="todo-item" data-page-node-id="wmYO0rFey9SWaaLltf9ktM">预订 The Local 餐厅 (10/11 晚餐备选)<small data-page-node-id="D5wrSlsXF9uGTkhFMfCEOm">米其林推荐 · 建议提前预订</small></li>
+      <li class="todo-item" data-page-node-id="nuUt0XElbbB9DXms5EQDIK">确认 The Weeknd 演唱会门票 (10/12)<small data-page-node-id="9r41KLLE7hapZTejLehREF">查看座位/入口门 · 截图保存二维码</small></li>
+      <li class="todo-item" data-page-node-id="mEpWb3nnKuKdw0x2Nk7B3n">确认 Charmkrung 晚餐预订 (10/10)<small data-page-node-id="juKWEtZzv4TGGM2sfMyWFk">已预订 · 出发前再发邮件确认</small></li>
+      <li class="todo-item" data-page-node-id="aigQWul4Q88bORCMo3Apvc">下载离线地图<small data-page-node-id="yijpGoHp9hivFnPEMlImpl">Google Maps 离线区域：曼谷全市</small></li>
+      <li class="todo-item" data-page-node-id="X4Vu9VUugqvQ63s4gNEubL">买泰国 eSIM 或开通漫游<small data-page-node-id="SbFQE660bWWeqVXfa3P8oQ">Airalo / 机场Tourist SIM · 提前装好</small></li>
+      <li class="todo-item" data-page-node-id="CCSdsCevIRh5SUKtGdQrB0">兑换泰铢<small data-page-node-id="MPDVwS2ds98FXQ3Hp338KV">4人5天 · 商场餐厅可刷卡 · 夜市/按摩/小店用现金</small></li>
+      <li class="todo-item" data-page-node-id="ET7EGA1JO8TUodF0gNIqLc">下载 Grab App<small data-page-node-id="iWTZtAp88vEboTQn4TO08d">泰国打车/外卖神器 · 绑好支付方式</small></li>
+      <li class="todo-item" data-page-node-id="irBHXjPvpdeigIkSPCKrCJ">打印/保存航班行程单<small data-page-node-id="ipN6vHEXUeUZwgGqtll9K7">SL361 / UO703 电子行程单截图</small></li>
+      <li class="todo-item" data-page-node-id="N5mxvPWBEK8mJiOoO3URWB">准备雨具 + 防晒<small data-page-node-id="SBqKNIjCamk8jZ4E6rkiDC">10月雨季：折叠伞/轻薄雨衣 + SPF50防晒</small></li>
+      <li class="todo-item" data-page-node-id="s48RBDcd17C0EXUnmAfgGk">充电宝（演唱会必备）<small data-page-node-id="AbN3Au6ovQjZAAfv9xZQXy">场馆大、拍照多、信号拥堵费电</small></li>
+    </ol>
+  </div>
+</div>
+
+<!-- ==================== 6. TIPS ==================== -->
+<div class="section" data-page-node-id="J6othUD2GChCtNGNY1yt3R">
+  <div class="section-title" data-page-node-id="8fGJaxcZV9lBovlfFuNw8V">实用贴士</div>
+  <div class="tip-grid" data-page-node-id="8I5yXibFf2pCtRhRnAFRsy">
+    <div class="tip-card" data-page-node-id="rQkCdO4WctxEp7hsOAtDVs">
+      <h4 data-page-node-id="uFaN6kpPvmMEQvRSoEMsnC">🚇 交通策略</h4>
+      <p data-page-node-id="gCravGle6eDyX9CfOrV9Da">BTS/MRT是主力。高峰：早7-9点、晚4-7:30（周五最堵）。平静窗口10:30-15:30。BTS和MRT是不同系统，换乘要重新购票。Grab高峰加价。演唱会散场别打车，坐ARL或等1小时。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="PXNNk2REFSqvDv51pGWXvE">
+      <h4 data-page-node-id="m7w8oe9uKwUeM34NsXFrui">🌡️ 10月天气</h4>
+      <p data-page-node-id="5msS8enwfhVKBf5A0wPAKH">白天30°C+，夜间24°C。月均22个雨天但阵雨为主，上半月仍多雨。湿度78-88%。室内空调强劲，备薄外套。穿透气棉麻，带折叠伞。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="mfA2iAl15VD8imXSPRD221">
+      <h4 data-page-node-id="ykqH35FgTDuPBLjEINzqbD">💳 支付</h4>
+      <p data-page-node-id="5iIWZytDolKn9ABYEmW5S1">商场/餐厅可Visa/Mastercard。夜市/按摩/小店/街头用现金泰铢。Grab可绑卡。建议换够每人5000-8000泰铢。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="8bkMYCMwQ17iq3QVzPHvBS">
+      <h4 data-page-node-id="ExAvKvPBHpgYwoEvyvkmfj">📱 通讯</h4>
+      <p data-page-node-id="ycthhDBDVWx5ivvYMpmfL9">提前买eSIM（Airalo Thailand）或落地机场买Tourist SIM。Bangkok Wi-Fi覆盖广但流量备着导航用。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="wFMeIatH1Z45iAhb0ULdpV">
+      <h4 data-page-node-id="8OTHgzBo1tYTBbO9NvYr9R">📅 10/13 公共假期</h4>
+      <p data-page-node-id="4sfCRJTw7tctlJMkRIVvDW">普密蓬国王逝世纪念日。银行和政府机关关闭，商场/餐厅正常营业。素万那普机场ARL正常运营。公共场合注意着装得体。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="z2TaoWBCfcfuSydc1SiPMn">
+      <h4 data-page-node-id="OIy9yYVS2tlwjBXGJKy6kz">🧴 健康安全</h4>
+      <p data-page-node-id="hiPpq6woBXZGyU45pmRyHg">只喝瓶装水，不喝自来水。街边冰块通常安全（制冰有标准）。防蚊液备一瓶。7-11/Eleven到处有，应急买水/零食/药方便。</p>
+    </div>
+    <div class="tip-card" data-page-node-id="OeokMgSysmQlUpzhCsTfOW">
+      <h4 data-page-node-id="xzRuKCg6z5TPnNloAHJ3Ms">🚕 从酒店到各地BTS参考</h4>
+      <p data-page-node-id="YMKwKZpevp7BQHQOqXOkjM">酒店→Siam: 1站 · →Asok: 3站 · →Phrom Phong: 4站 · →Ari: 6站(北行) · →Saphan Taksin: 4站(南行转Silom线) · 廊曼DMK: 出租45min · 素万那普BKK: ARL 30min</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CHANGELOG ==================== -->
+<div class="changelog" data-page-node-id="ETF7wcsqjQYms1GV7eDZ7E">
+  <h3 data-page-node-id="uUOeAr73NqfhWRjLJGKEag">修改日志 / Changelog</h3>
+  <div class="cl-entry" data-page-node-id="9xYgSBHqI3P9tZSOxLosBj"><b data-page-node-id="ki1MS74JBzmJGTCgaISMIQ">v1.1</b> · 2026-09-23 · 删除10/10 Divana Scentuara按摩行程（仅保留D3 Oasis一次按摩）· 精简着装提示为场景+Vibe · 去掉10/11生日标记</div>
+  <div class="cl-entry" data-page-node-id="ElErLyBpGtsS21M9vsbfuK"><b data-page-node-id="51Zb8e0q3Z5qS42tDkFm15">v1.0</b> · 2026-09-23 · 初始版本。航班/酒店/Charmkrung/The Weeknd已确认。行程按5天排定。下午茶改Patom Organic。</div>
+  <div class="cl-entry" data-page-node-id="1XkTz2QWraSB0bp6MHqNGc"><b data-page-node-id="smXFWOSmZyrtjLoZw8IgGC">状态</b> · 待确认演唱会座位/入口 · The Local vs Oyster Mania晚餐待定 · Puponfai walk-in或外卖待定</div>
+  <div class="cl-version" data-page-node-id="ulgnxd1pTD4iX7Ca42snY9">最后更新: 2026-09-23 v1.1 · 办完一项告诉我，我改页面</div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+// ==================== EVENT TIMELINE (all times with timezone offsets) ====================
+const events=[
+  {t:'2026-10-09T14:20:00+08:00',n:'航班SL361起飞',d:'香港T2 → 曼谷廊曼T1 · 飞行2h45m'},
+  {t:'2026-10-09T16:05:00+07:00',n:'落地曼谷廊曼机场',d:'取行李→打车去酒店（周五晚高峰）'},
+  {t:'2026-10-10T09:00:00+07:00',n:'Brunch: ACE JOLUN',d:'264 Phahonyothin Rd · 近Ari'},
+  {t:'2026-10-10T18:00:00+07:00',n:'Charmkrung晚餐',d:'Talat Noi 6楼 · 已预订'},
+  {t:'2026-10-10T20:30:00+07:00',n:'G.O.D. Bar',d:'Soi Nana 唐人街 · walk-in'},
+  {t:'2026-10-11T11:00:00+07:00',n:'Patom Organic下午茶',d:'Sukhumvit 49 · 玻璃温室咖啡馆'},
+  {t:'2026-10-11T14:00:00+07:00',n:'全身按摩: Oasis Spa',d:'Sukhumvit 31 · 需预订'},
+  {t:'2026-10-11T18:30:00+07:00',n:'晚餐',d:'The Local / Oyster Mania 二选一'},
+  {t:'2026-10-11T21:00:00+07:00',n:'Abandoned Mansion酒吧',d:'Sukhumvit 14 · 1930s speakeasy'},
+  {t:'2026-10-12T12:00:00+07:00',n:'午餐: Inter Restaurant',d:'Siam Square Soi 9 · 1981年老店'},
+  {t:'2026-10-12T17:00:00+07:00',n:'出发去Rajamangala',d:'BTS→ARL→摩的 · 约50-60min'},
+  {t:'2026-10-12T20:00:00+07:00',n:'The Weeknd演唱会开始',d:'After Hours Til Dawn · Rajamangala'},
+  {t:'2026-10-13T07:00:00+07:00',n:'伦批尼公园晨间散步',d:'酒店步行5分钟 · 最后的曼谷清晨'},
+  {t:'2026-10-13T16:00:00+07:00',n:'出发去素万那普机场',d:'ARL或Grab · 非高峰约35min'},
+  {t:'2026-10-13T19:40:00+07:00',n:'航班UO703起飞回香港',d:'素万那普BKK → 香港T1 · 飞行3h'},
+];
+
+// ==================== COUNTDOWN LOGIC ====================
+function getNextEvent(){
+  const now=Date.now();
+  for(const e of events){
+    const et=new Date(e.t).getTime();
+    if(et>now) return e;
+  }
+  return null;
+}
+
+function pad(n){return String(n).padStart(2,'0');}
+
+function fmtBangkokTime(iso){
+  try{
+    const d=new Date(iso);
+    return new Intl.DateTimeFormat('zh-CN',{
+      timeZone:'Asia/Bangkok',month:'2-digit',day:'2-digit',
+      hour:'2-digit',minute:'2-digit',hour12:false
+    }).format(d);
+  }catch(e){return '';}
+}
+
+function updateCountdown(){
+  const ev=getNextEvent();
+  const el=document.getElementById('cd-event');
+  const elL=document.getElementById('cd-label');
+  const elD=document.getElementById('cd-d');
+  const elH=document.getElementById('cd-h');
+  const elM=document.getElementById('cd-m');
+  const elS=document.getElementById('cd-s');
+  const elTz=document.getElementById('cd-tz');
+
+  if(!ev){
+    elL.textContent='旅行已结束';
+    el.textContent='安全到家，下次见！';
+    elD.textContent='—';elH.textContent='—';elM.textContent='—';elS.textContent='—';
+    elTz.textContent='';
+    return;
+  }
+
+  const target=new Date(ev.t).getTime();
+  const now=Date.now();
+  let diff=Math.max(0,target-now);
+  const days=Math.floor(diff/86400000);diff%=86400000;
+  const hours=Math.floor(diff/3600000);diff%=3600000;
+  const mins=Math.floor(diff/60000);diff%=60000;
+  const secs=Math.floor(diff/1000);
+
+  elL.textContent='此刻关注';
+  el.textContent=ev.n;
+  elD.textContent=pad(days);
+  elH.textContent=pad(hours);
+  elM.textContent=pad(mins);
+  elS.textContent=pad(secs);
+
+  const bkkTime=fmtBangkokTime(ev.t);
+  elTz.textContent=bkkTime?'曼谷时间 '+bkkTime+' · '+ev.d:'';
+}
+
+// ==================== THEME SWITCHING ====================
+function getBangkokHour(){
+  try{
+    const fmt=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Bangkok',hour:'2-digit',hour12:false});
+    return parseInt(fmt.format(new Date()));
+  }catch(e){return new Date().getHours();}
+}
+
+function updateTheme(){
+  const h=getBangkokHour();
+  const isDark=(h<6||h>=18);
+  document.documentElement.setAttribute('data-theme',isDark?'dark':'light');
+  const meta=document.getElementById('meta-theme');
+  if(meta) meta.setAttribute('content',isDark?'#15151f':'#faf6f0');
+}
+
+// ==================== DAY CARD TOGGLE ====================
+function toggleDay(id){
+  const card=document.getElementById(id);
+  if(card) card.classList.toggle('open');
+}
+
+// ==================== INIT ====================
+updateTheme();
+updateCountdown();
+setInterval(updateCountdown,1000);
+setInterval(updateTheme,60000);
+
+// Auto-open Day 1 on load
+document.addEventListener('DOMContentLoaded',function(){
+  // Open the day card for the current/next day
+  const now=Date.now();
+  let openDay='day1';
+  if(new Date('2026-10-10T00:00:00+07:00').getTime()<now) openDay='day2';
+  if(new Date('2026-10-11T00:00:00+07:00').getTime()<now) openDay='day3';
+  if(new Date('2026-10-12T00:00:00+07:00').getTime()<now) openDay='day4';
+  if(new Date('2026-10-13T00:00:00+07:00').getTime()<now) openDay='day5';
+  const card=document.getElementById(openDay);
+  if(card) card.classList.add('open');
+});
+</script>
+</body>
+</html>
